@@ -1,20 +1,28 @@
 public class Circulo extends Forma{
 
-    public double radio = 1.0;
+    public double radio;
 
     //metodos
-    public void calcularRadioCirculo (){
+    public Circulo (){
         return;
     }
 
-    public void calcularRadioCirculo (double radio){
+    public Circulo (double radio){
         this.radio = radio;
     }
 
-    public void calcularRadioCirculo (double radio, String color, boolean relleno){
+    public Circulo (double radio, String color, boolean relleno){
         this.radio = radio;
         this.color = color;
         this.relleno = relleno;
     }
 
+    //getters y setters
+    public double getRadio() {
+        return radio;
+    }
+
+    public void setRadio(double radio) {
+        this.radio = radio;
+    }
 }

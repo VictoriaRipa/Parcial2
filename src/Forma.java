@@ -12,7 +12,7 @@ public abstract class Forma {
         this.color = color;
         this.relleno = relleno;
     }
-    
+
 
 
     //getters y setters

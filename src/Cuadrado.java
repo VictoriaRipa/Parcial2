@@ -3,15 +3,15 @@ public class Cuadrado extends Forma{
     public double lado;
 
     //metodos
-    public void calcularLadosCuadrado(){
+    public Cuadrado(){
         return;
     }
 
-    public void calcularLadosCuadrado(double lado){
+    public Cuadrado(double lado){
     this.lado = lado;
     }
 
-    public void calcularLadosCuadrado(double lado, String color, boolean relleno){
+    public Cuadrado(double lado, String color, boolean relleno){
         this.lado = lado;
         this.color = color;
         this.relleno = relleno;

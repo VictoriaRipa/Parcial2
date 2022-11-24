@@ -1,0 +1,42 @@
+@startuml
+class Cuadrado {
++ double lado
++ void calcularLadosCuadrado()
++ void calcularLadosCuadrado(double)
++ void calcularLadosCuadrado(double,String,boolean)
++ double getLado()
++ void setLado(double)
+}
+class Circulo {
++ double radio
++ void calcularRadioCirculo()
++ void calcularRadioCirculo(double)
++ void calcularRadioCirculo(double,String,boolean)
+}
+abstract class Forma {
++ String color
++ boolean relleno
++ void mostrarForma()
++ void mostrarForma(String,boolean)
++ boolean isRelleno()
++ void setRelleno(boolean)
++ String getColor()
++ void setColor(String)
+}
+class Rectangulo {
++ double length
++ double widht
++ double getWidht()
++ void setWidht(double)
++ double getLength()
++ void setLength(double)
+}
+class Main {
++ {static} void main(String[])
+}
+
+
+Forma <|-- Cuadrado
+Forma <|-- Circulo
+Forma <|-- Rectangulo
+@enduml
