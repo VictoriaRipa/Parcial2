@@ -8,6 +8,7 @@ public class Circulo extends Forma{
         super(color, relleno);
         this.radio = radio;
     }
+    
 
     //getters y setters
     public double getRadio() {

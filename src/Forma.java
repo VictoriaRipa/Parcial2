@@ -10,9 +10,6 @@ public abstract class Forma {
         this.relleno = relleno;
     }
 
-
-
-
     //getters y setters
     public boolean isRelleno() {
         return relleno;
@@ -31,10 +28,14 @@ public abstract class Forma {
         this.color = color;
     }
 
+    double area;
+    public void setArea(double area) {
+        this.area = area;
+    }
 
-
-
-
-
+    double perimetro;
+    public void setPerimetro(double perimetro) {
+        this.perimetro = perimetro;
+    }
 
 }
