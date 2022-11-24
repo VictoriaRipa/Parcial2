@@ -4,14 +4,12 @@ public abstract class Forma {
     public boolean relleno;
 
     //metodos
-    public void mostrarForma() {
 
-    }
-
-    public void mostrarForma(String color, boolean relleno){
+    public Forma(String color, boolean relleno){
         this.color = color;
         this.relleno = relleno;
     }
+
 
 
 

@@ -4,20 +4,11 @@ public class Rectangulo extends Forma {
     public double widht = 1.0;
 
     //metodos
-    public Rectangulo(){
-        return;
-    }
-
-    public Rectangulo(double widht, double length){
-        this.widht = widht;
-        this.length = length;
-    }
-
     public Rectangulo(double widht, double length, String color, boolean relleno){
+        super(color, relleno);
         this.widht = widht;
         this.length = length;
-        this.color = color;
-        this.relleno = relleno;
+
     }
 
     //getters y setters

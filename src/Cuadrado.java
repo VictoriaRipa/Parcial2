@@ -3,18 +3,9 @@ public class Cuadrado extends Forma{
     public double lado;
 
     //metodos
-    public Cuadrado(){
-        return;
-    }
-
-    public Cuadrado(double lado){
-    this.lado = lado;
-    }
-
     public Cuadrado(double lado, String color, boolean relleno){
+        super(color, relleno);
         this.lado = lado;
-        this.color = color;
-        this.relleno = relleno;
     }
 
 
