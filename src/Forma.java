@@ -3,22 +3,13 @@ public abstract class Forma {
     public String color;
     public boolean relleno;
 
-    //metodos
+    public Forma(){
 
+    }
     public Forma(String color, boolean relleno){
         this.color = color;
         this.relleno = relleno;
     }
-
-    //getters y setters
-    public boolean isRelleno() {
-        return relleno;
-    }
-
-    public void setRelleno(boolean relleno) {
-        this.relleno = relleno;
-    }
-
 
     public String getColor() {
         return color;
@@ -28,14 +19,16 @@ public abstract class Forma {
         this.color = color;
     }
 
-    double area;
-    public void setArea(double area) {
-        this.area = area;
+    public boolean isRelleno() {
+        return relleno;
     }
 
-    double perimetro;
-    public void setPerimetro(double perimetro) {
-        this.perimetro = perimetro;
+    public void setRelleno(boolean relleno) {
+        this.relleno = relleno;
     }
+
+    public abstract double getArea();
+
+    public abstract double getPerimetro();
 
 }

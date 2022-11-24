@@ -1,16 +1,14 @@
-public class Cuadrado extends Forma{
+public class Cuadrado extends Rectangulo{
 
+    public Cuadrado (){
+
+    }
     public double lado;
 
-    //metodos
     public Cuadrado(double lado, String color, boolean relleno){
-        super(color, relleno);
         this.lado = lado;
     }
 
-
-
-    //getters y setters
     public double getLado() {
         return lado;
     }
@@ -19,7 +17,13 @@ public class Cuadrado extends Forma{
         this.lado = lado;
     }
 
+    @Override
+    public void setWidht(double widht) {
+        super.setWidht(getLado());
+    }
 
-
-
+    @Override
+    public void setLength(double length) {
+        super.setLength(getLado());
+    }
 }
